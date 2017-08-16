@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <link rel="stylesheet" href="http://cdn.rawgit.com/daniel3735928559/guppy/24d744fd/build/guppy.min.css">
+    <script type="text/javascript" src="http://cdn.rawgit.com/daniel3735928559/guppy/24d744fd/build/guppy.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.js">
+
+    </script>
+  <script src="https://wzrd.in/standalone/function-plot@1.18.1"></script>
+
+
+    <meta charset="utf-8">
+    <title>Graphing calculator</title>
+  </head>
+  <body style="background-color:#CCC;">
+    <div class="container">
+      <div id="guppy_div" style="width:400px;height:100px;background-color: white;cursor:text;"></div>
+
+      <script>
+          new Guppy("guppy_div");
+          Guppy.init_symbols(["https://cdn.rawgit.com/daniel3735928559/guppy/24d744fd/sym/symbols.json"]);
+      </script>
+
+      <br>
+      <button onclick="formula_input()" class="btn btn-primary">Plot Graph</button>
+      <br>
+      <br>
+      <div id="quadratic-with-options" class="graph" style="background-color: white;">
+
+      </div>
+  </div>
+  </body>
+</html>
