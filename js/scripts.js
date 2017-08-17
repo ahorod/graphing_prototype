@@ -23,9 +23,11 @@ function formula_input(){
   if (is_inequality) {
     fnType = 'implicit';
     isInequality = true;
-    fn = '(' + fn.split('<')[0] + ')-(' + fn.split('<')[1] + ')';
     if (fn.split('>').length == 2) {
+      fn = '(' + fn.split('>')[0] + ')-(' + fn.split('>')[1] + ')';
       fn = '-(' + fn + ')';
+    } else {
+      fn = '(' + fn.split('<')[0] + ')-(' + fn.split('<')[1] + ')';
     }
   }
   console.log(fn);
